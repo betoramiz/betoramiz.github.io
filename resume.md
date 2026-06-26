@@ -1,3 +1,7 @@
+---
+layout: default
+title: Resume
+---
 # Alberto Ramirez
 **Senior Full Stack Engineer**  
 Monterrey, Nuevo León, México  
