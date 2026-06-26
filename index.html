@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alberto Ramirez — Senior Full Stack Engineer</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  
+  <!-- Tabler Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gh: {
+              canvas: '#f6f8fa',
+              surface: '#ffffff',
+              border: '#d0d7de',
+              borderM: '#e8ecf0',
+              text: '#1f2328',
+              sec: '#57606a',
+              muted: '#6e7781',
+              accent: '#0969da',
+              accBg: '#ddf4ff',
+              accBr: '#54aeff',
+              badgeBg: '#eaf5ff',
+              badgeT: '#0550ae',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          borderRadius: {
+            card: '10px',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gh-canvas text-gh-text font-sans text-[13px] md:text-sm leading-relaxed antialiased">
+
+  <div class="max-w-[1080px] mx-auto px-3 py-4 md:px-6 md:py-8 flex flex-col gap-4">
+    
+    <!-- Download & Source Bar -->
+    <div class="bg-gh-accBg border border-gh-accBr rounded-card p-3 flex items-center justify-between gap-3 flex-wrap shadow-sm">
+      <span class="text-xs md:text-sm font-medium text-gh-accent">Alberto Ramirez — Resume</span>
+      <div class="flex items-center gap-2">
+        <a class="inline-flex items-center gap-1.5 bg-gh-surface border border-gh-border text-gh-sec font-sans text-xs font-medium px-3 py-1.5 rounded hover:bg-gh-canvas hover:text-gh-text transition-colors whitespace-nowrap no-underline shadow-xs" href="https://github.com/betoramiz/betoramiz.github.io/blob/main/index.md" target="_blank">
+          <i class="ti ti-brand-github" aria-hidden="true"></i> View Markdown
+        </a>
+        <a class="inline-flex items-center gap-1.5 bg-gh-accent text-white font-sans text-xs font-medium px-3 py-1.5 rounded hover:bg-opacity-90 transition-colors whitespace-nowrap no-underline shadow-sm" href="https://drive.google.com/file/d/YOUR_FILE_ID/view" target="_blank">
+          <i class="ti ti-download" aria-hidden="true"></i> Download PDF
+        </a>
+      </div>
+    </div>
+
+    <!-- Header Card (Full Width at the top) -->
+    <div class="bg-gh-surface border border-gh-border rounded-card p-5 md:p-6 shadow-sm">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-gh-accent flex items-center justify-center font-mono text-lg md:text-xl font-medium text-white shrink-0 border border-gh-border shadow-sm">AR</div>
+          <div>
+            <h1 class="text-lg md:text-2xl font-semibold text-gh-text tracking-tight">Alberto Ramirez</h1>
+            <p class="text-xs md:text-sm text-gh-sec font-medium">Senior Full Stack Engineer</p>
+          </div>
+        </div>
+        <div class="self-start sm:self-center">
+          <div class="font-mono text-[10px] md:text-xs font-medium text-gh-badgeT bg-gh-badgeBg border border-gh-accBr rounded-full px-3 py-1 inline-block tracking-wide shadow-2xs">.NET · C# · Angular · SQL Server · PostgreSQL · 15 yrs</div>
+        </div>
+      </div>
+      
+      <!-- Contact Information Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 border-t border-gh-borderM pt-4 mt-4">
+        <a href="mailto:maramirez10@gmail.com" class="text-xs text-gh-accent no-underline flex items-center gap-2 hover:underline">
+          <i class="ti ti-mail text-sm shrink-0"></i>maramirez10@gmail.com
+        </a>
+        <span class="text-xs text-gh-sec flex items-center gap-2">
+          <i class="ti ti-map-pin text-sm shrink-0"></i>Monterrey, MX
+        </span>
+        <a href="https://github.com/betoramiz" target="_blank" class="text-xs text-gh-accent no-underline flex items-center gap-2 hover:underline">
+          <i class="ti ti-brand-github text-sm shrink-0"></i>github.com/betoramiz
+        </a>
+        <a href="https://linkedin.com/in/betoramiz" target="_blank" class="text-xs text-gh-accent no-underline flex items-center gap-2 hover:underline">
+          <i class="ti ti-brand-linkedin text-sm shrink-0"></i>linkedin.com/in/betoramiz
+        </a>
+      </div>
+    </div>
+
+    <!-- Responsive Grid Layout -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 md:gap-6">
+      
+      <!-- Left Column (Skills & Education) -->
+      <!-- order-2 on mobile, so it stacks below experience. lg:order-1 on desktop, so it stays on the left. -->
+      <div class="lg:col-span-4 order-2 lg:order-1 flex flex-col gap-4">
+        
+        <!-- Skills Card -->
+        <div class="bg-gh-surface border border-gh-border rounded-card overflow-hidden shadow-sm">
+          <div class="px-4 py-2.5 border-b border-gh-borderM bg-gh-canvas flex items-center gap-2">
+            <i class="ti ti-code text-base text-gh-muted animate-pulse" aria-hidden="true"></i>
+            <h2 class="text-[10.5px] font-semibold text-gh-text tracking-wider uppercase">Skills</h2>
+          </div>
+          <div class="p-4 md:p-5 flex flex-col gap-4">
+            <div>
+              <div class="text-[9.5px] font-semibold uppercase tracking-wider text-gh-muted mb-1.5">Languages</div>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">C#</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">TypeScript</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">JavaScript</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">SQL</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">HTML5</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">CSS3</span>
+              </div>
+            </div>
+            <div>
+              <div class="text-[9.5px] font-semibold uppercase tracking-wider text-gh-muted mb-1.5">Backend</div>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">.NET 9 / 8</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">ASP.NET Web API</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">Clean Architecture</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">Vertical Slice</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">CQRS</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">MediatR</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">RESTful APIs</span>
+              </div>
+            </div>
+            <div>
+              <div class="text-[9.5px] font-semibold uppercase tracking-wider text-gh-muted mb-1.5">Frontend</div>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">Angular 18 - 7</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">NgRx</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">Signals</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">RxJS</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">Tailwind CSS</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">Angular Material</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">Zod</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">Bootstrap</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">jQuery</span>
+              </div>
+            </div>
+            <div>
+              <div class="text-[9.5px] font-semibold uppercase tracking-wider text-gh-muted mb-1.5">Databases</div>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">PostgreSQL</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">SQL Server</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">EF Core</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">Dapper</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">PgBouncer</span>
+                <span class="text-xs text-gh-sec bg-gh-canvas border border-gh-border rounded px-2.5 py-0.5 shadow-2xs">Query Optimization</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Card -->
+        <div class="bg-gh-surface border border-gh-border rounded-card overflow-hidden shadow-sm">
+          <div class="px-4 py-2.5 border-b border-gh-borderM bg-gh-canvas flex items-center gap-2">
+            <i class="ti ti-school text-base text-gh-muted" aria-hidden="true"></i>
+            <h2 class="text-[10.5px] font-semibold text-gh-text tracking-wider uppercase">Education</h2>
+          </div>
+          <div class="p-4 md:p-5">
+            <div class="text-xs md:text-sm font-semibold text-gh-text mb-1">Instituto Tecnológico de La Paz</div>
+            <div class="text-xs md:text-[13px] text-gh-sec mb-1 leading-relaxed">B.S. in Computer Systems Engineering</div>
+            <div class="text-[11px] md:text-xs text-gh-muted font-mono">La Paz, B.C.S., México · 2004 – 2010</div>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- Right Column (Summary & Experience) -->
+      <!-- order-1 on mobile, so it stacks above skills/education. lg:order-2 on desktop, so it stays on the right. -->
+      <div class="lg:col-span-8 order-1 lg:order-2 flex flex-col gap-4">
+        
+        <!-- Summary Card -->
+        <div class="bg-gh-surface border border-gh-border rounded-card overflow-hidden shadow-sm">
+          <div class="px-4 py-2.5 border-b border-gh-borderM bg-gh-canvas flex items-center gap-2">
+            <i class="ti ti-file-text text-base text-gh-muted" aria-hidden="true"></i>
+            <h2 class="text-[10.5px] font-semibold text-gh-text tracking-wider uppercase">Summary</h2>
+          </div>
+          <div class="p-4 md:p-5">
+            <p class="text-xs md:text-sm text-gh-sec leading-relaxed text-justify">
+              Full Stack Engineer with 15 years of hands-on experience building production systems across fintech, healthcare, e-commerce, and construction. I specialize in .NET and Angular — backend APIs, frontend SPAs, and the data layer in between. What drives me is genuine curiosity and a commitment to keep improving: I push through complex problems, take ownership of the work, and always look for the cleaner solution.
+            </p>
+          </div>
+        </div>
+
+        <!-- Experience Card -->
+        <div class="bg-gh-surface border border-gh-border rounded-card overflow-hidden shadow-sm">
+          <div class="px-4 py-2.5 border-b border-gh-borderM bg-gh-canvas flex items-center gap-2">
+            <i class="ti ti-briefcase text-base text-gh-muted" aria-hidden="true"></i>
+            <h2 class="text-[10.5px] font-semibold text-gh-text tracking-wider uppercase">Experience</h2>
+          </div>
+          <div class="p-4 md:p-5">
+
+            <!-- Developers.net -->
+            <div class="mb-6 last:mb-0">
+              <div class="flex items-baseline justify-between gap-2 mb-1 flex-wrap">
+                <span class="text-sm md:text-base font-semibold text-gh-text">Developers.net</span>
+                <span class="font-mono text-[10px] text-gh-muted bg-gh-canvas border border-gh-border rounded-full px-2 py-0.5 whitespace-nowrap shadow-2xs">May 2021 – Present</span>
+              </div>
+              <div class="text-xs md:text-sm text-gh-sec font-medium mb-3">Senior Full Stack Engineer · US-based client projects</div>
+
+              <!-- Project Aviate -->
+              <div class="border border-gh-borderM rounded-lg mb-3.5 last:mb-0 overflow-hidden shadow-2xs">
+                <div class="bg-gh-canvas px-3.5 py-2 flex items-baseline justify-between gap-2 flex-wrap border-b border-gh-borderM">
+                  <span class="text-xs md:text-sm font-semibold text-gh-text">Aviate — Air Cargo Logistics</span>
+                  <span class="text-[10px] md:text-xs text-gh-muted font-medium font-mono">2024 – Present</span>
+                </div>
+                <div class="p-3.5">
+                  <p class="text-xs md:text-[13px] text-gh-sec mb-2.5 leading-relaxed">Full-stack modernization of a critical air cargo logistics system, migrating a legacy C++ platform to a cloud-based .NET and Angular architecture.</p>
+                  <ul class="list-none p-0 m-0 mb-3 space-y-1.5">
+                    <li class="text-xs md:text-[13px] text-gh-sec pl-3.5 relative leading-relaxed before:content-['·'] before:absolute before:left-0.5 before:text-gh-accent before:font-bold before:text-base before:leading-none">Redesigned core C++ business logic into clean RESTful APIs using .NET 8, Vertical Slice Architecture, CQRS, and MediatR.</li>
+                    <li class="text-xs md:text-[13px] text-gh-sec pl-3.5 relative leading-relaxed before:content-['·'] before:absolute before:left-0.5 before:text-gh-accent before:font-bold before:text-base before:leading-none">Built the full frontend in Angular 17+ with Signals, RxJS, and Tailwind CSS for a modern, reactive UI.</li>
+                    <li class="text-xs md:text-[13px] text-gh-sec pl-3.5 relative leading-relaxed before:content-['·'] before:absolute before:left-0.5 before:text-gh-accent before:font-bold before:text-base before:leading-none">Designed the SQL Server data layer with EF Core, mapping legacy structures into a normalized, cloud-ready schema.</li>
+                    <li class="text-xs md:text-[13px] text-gh-sec pl-3.5 relative leading-relaxed before:content-['·'] before:absolute before:left-0.5 before:text-gh-accent before:font-bold before:text-base before:leading-none">Maintained business continuity during migration while delivering new features in parallel.</li>
+                  </ul>
+                  <div class="flex flex-wrap gap-1.5 mt-3">
+                    <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">.NET 8</span>
+                    <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">C#</span>
+                    <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">CQRS</span>
+                    <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">MediatR</span>
+                    <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">SQL Server</span>
+                    <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">EF Core</span>
+                    <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">Angular 17+</span>
+                    <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">Signals</span>
+                    <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">Tailwind</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Ed-Fi Alliance -->
+              <div class="border border-gh-borderM rounded-lg mb-3.5 last:mb-0 overflow-hidden shadow-2xs">
+                <div class="bg-gh-canvas px-3.5 py-2 flex items-baseline justify-between gap-2 flex-wrap border-b border-gh-borderM">
+                  <span class="text-xs md:text-sm font-semibold text-gh-text">Ed-Fi Alliance — Ed-Tech</span>
+                  <span class="text-[10px] md:text-xs text-gh-muted font-medium font-mono">2022 – 2023</span>
+                </div>
+                <div class="p-3.5">
+                  <ul class="list-none p-0 m-0 mb-3 space-y-1.5">
+                    <li class="text-xs md:text-[13px] text-gh-sec pl-3.5 relative leading-relaxed before:content-['·'] before:absolute before:left-0.5 before:text-gh-accent before:font-bold before:text-base before:leading-none">Resolved complex bugs in the .NET Core MVC codebase, contributing fixes via pull requests to the open-source project.</li>
+                    <li class="text-xs md:text-[13px] text-gh-sec pl-3.5 relative leading-relaxed before:content-['·'] before:absolute before:left-0.5 before:text-gh-accent before:font-bold before:text-base before:leading-none">Managed deployments across IIS, Docker on Linux, and Azure App Services.</li>
+                    <li class="text-xs md:text-[13px] text-gh-sec pl-3.5 relative leading-relaxed before:content-['·'] before:absolute before:left-0.5 before:text-gh-accent before:font-bold before:text-base before:leading-none">Optimized SQL Server and PostgreSQL data layers; configured PgBouncer for connection pooling.</li>
+                  </ul>
+                  <div class="flex flex-wrap gap-1.5 mt-3">
+                    <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">.NET Core MVC</span>
+                    <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">Docker</span>
+                    <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">PostgreSQL</span>
+                    <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">PgBouncer</span>
+                    <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">Azure</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Sync1 -->
+              <div class="border border-gh-borderM rounded-lg mb-3.5 last:mb-0 overflow-hidden shadow-2xs">
+                <div class="bg-gh-canvas px-3.5 py-2 flex items-baseline justify-between gap-2 flex-wrap border-b border-gh-borderM">
+                  <span class="text-xs md:text-sm font-semibold text-gh-text">Sync1 — FinTech Loan Platform</span>
+                  <span class="text-[10px] md:text-xs text-gh-muted font-medium font-mono">2021 – 2022</span>
+                </div>
+                <div class="p-3.5">
+                  <ul class="list-none p-0 m-0 mb-3 space-y-1.5">
+                    <li class="text-xs md:text-[13px] text-gh-sec pl-3.5 relative leading-relaxed before:content-['·'] before:absolute before:left-0.5 before:text-gh-accent before:font-bold before:text-base before:leading-none">Implemented critical business rules and auth flows in ASP.NET Core 3.1 under strict financial security standards.</li>
+                    <li class="text-xs md:text-[13px] text-gh-sec pl-3.5 relative leading-relaxed before:content-['·'] before:absolute before:left-0.5 before:text-gh-accent before:font-bold before:text-base before:leading-none">Decoupled services with Azure Service Bus for resilience under peak loan application load.</li>
+                    <li class="text-xs md:text-[13px] text-gh-sec pl-3.5 relative leading-relaxed before:content-['·'] before:absolute before:left-0.5 before:text-gh-accent before:font-bold before:text-base before:leading-none">Built the UI with Angular 12, NgRx, and Angular Material.</li>
+                  </ul>
+                  <div class="flex flex-wrap gap-1.5 mt-3">
+                    <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">ASP.NET Core</span>
+                    <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">SQL Server</span>
+                    <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">Angular 12</span>
+                    <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">NgRx</span>
+                    <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">Azure Service Bus</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Everyware -->
+              <div class="border border-gh-borderM rounded-lg mb-3.5 last:mb-0 overflow-hidden shadow-2xs">
+                <div class="bg-gh-canvas px-3.5 py-2 flex items-baseline justify-between gap-2 flex-wrap border-b border-gh-borderM">
+                  <span class="text-xs md:text-sm font-semibold text-gh-text">Everyware — Payment Solution</span>
+                  <span class="text-[10px] md:text-xs text-gh-muted font-medium font-mono">2021</span>
+                </div>
+                <div class="p-3.5">
+                  <ul class="list-none p-0 m-0 mb-3 space-y-1.5">
+                    <li class="text-xs md:text-[13px] text-gh-sec pl-3.5 relative leading-relaxed before:content-['·'] before:absolute before:left-0.5 before:text-gh-accent before:font-bold before:text-base before:leading-none">Built a secure payment API in ASP.NET Core for SMS/email payment links, integrated with a new Angular frontend.</li>
+                    <li class="text-xs md:text-[13px] text-gh-sec pl-3.5 relative leading-relaxed before:content-['·'] before:absolute before:left-0.5 before:text-gh-accent before:font-bold before:text-base before:leading-none">Integrated new API with legacy SQL Server database ensuring data consistency during migration.</li>
+                  </ul>
+                  <div class="flex flex-wrap gap-1.5 mt-3">
+                    <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">ASP.NET Core</span>
+                    <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">SQL Server</span>
+                    <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">Angular</span>
+                    <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">Razor Pages</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr class="border-none border-t border-gh-borderM my-5">
+
+            <!-- Fibo Systems -->
+            <div class="mb-6 last:mb-0">
+              <div class="flex items-baseline justify-between gap-2 mb-1 flex-wrap">
+                <span class="text-sm md:text-base font-semibold text-gh-text">Fibo Systems</span>
+                <span class="font-mono text-[10px] text-gh-muted bg-gh-canvas border border-gh-border rounded-full px-2 py-0.5 whitespace-nowrap shadow-2xs">Dec 2019 – Jan 2021</span>
+              </div>
+              <div class="text-xs md:text-sm text-gh-sec font-medium mb-3">Tech Lead & Co-Founder <span class="text-xs text-gh-muted font-normal">(Initially side venture, transitioned to full-time)</span></div>
+              <ul class="list-none p-0 m-0 mb-3 space-y-1.5">
+                <li class="text-xs md:text-[13px] text-gh-sec pl-3.5 relative leading-relaxed before:content-['·'] before:absolute before:left-0.5 before:text-gh-accent before:font-bold before:text-base before:leading-none">Co-founded a software agency, leading architecture and delivery across multiple client projects.</li>
+                <li class="text-xs md:text-[13px] text-gh-sec pl-3.5 relative leading-relaxed before:content-['·'] before:absolute before:left-0.5 before:text-gh-accent before:font-bold before:text-base before:leading-none">Designed systems and led small engineering teams from kickoff to production.</li>
+              </ul>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">.NET Core</span>
+                <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">JavaScript</span>
+                <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">Linux</span>
+                <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">Docker</span>
+              </div>
+            </div>
+
+            <hr class="border-none border-t border-gh-borderM my-5">
+
+            <!-- Definity First -->
+            <div class="mb-6 last:mb-0">
+              <div class="flex items-baseline justify-between gap-2 mb-1 flex-wrap">
+                <span class="text-sm md:text-base font-semibold text-gh-text">Definity First</span>
+                <span class="font-mono text-[10px] text-gh-muted bg-gh-canvas border border-gh-border rounded-full px-2 py-0.5 whitespace-nowrap shadow-2xs">May 2018 – Jun 2020</span>
+              </div>
+              <div class="text-xs md:text-sm text-gh-sec font-medium mb-3">Web Engineer</div>
+              <ul class="list-none p-0 m-0 mb-3 space-y-1.5">
+                <li class="text-xs md:text-[13px] text-gh-sec pl-3.5 relative leading-relaxed before:content-['·'] before:absolute before:left-0.5 before:text-gh-accent before:font-bold before:text-base before:leading-none">Migrated a legacy Silverlight healthcare app to Angular 7, rebuilding complex UI modules.</li>
+                <li class="text-xs md:text-[13px] text-gh-sec pl-3.5 relative leading-relaxed before:content-['·'] before:absolute before:left-0.5 before:text-gh-accent before:font-bold before:text-base before:leading-none">Developed new backend features for a healthcare platform using .NET Core.</li>
+              </ul>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">C#</span>
+                <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">.NET Core</span>
+                <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">Angular 7</span>
+                <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">CSS/SASS</span>
+              </div>
+            </div>
+
+            <hr class="border-none border-t border-gh-borderM my-5">
+
+            <!-- ePesos.com -->
+            <div class="mb-6 last:mb-0">
+              <div class="flex items-baseline justify-between gap-2 mb-1 flex-wrap">
+                <span class="text-sm md:text-base font-semibold text-gh-text">ePesos.com</span>
+                <span class="font-mono text-[10px] text-gh-muted bg-gh-canvas border border-gh-border rounded-full px-2 py-0.5 whitespace-nowrap shadow-2xs">Nov 2016 – May 2018</span>
+              </div>
+              <div class="text-xs md:text-sm text-gh-sec font-medium mb-3">Full Stack .NET Developer</div>
+              <ul class="list-none p-0 m-0 mb-3 space-y-1.5">
+                <li class="text-xs md:text-[13px] text-gh-sec pl-3.5 relative leading-relaxed before:content-['·'] before:absolute before:left-0.5 before:text-gh-accent before:font-bold before:text-base before:leading-none">Built RESTful APIs exposing core banking services to external financial partners.</li>
+                <li class="text-xs md:text-[13px] text-gh-sec pl-3.5 relative leading-relaxed before:content-['·'] before:absolute before:left-0.5 before:text-gh-accent before:font-bold before:text-base before:leading-none">Developed the admin platform using ASP.NET MVC 5 and Entity Framework on SQL Server.</li>
+              </ul>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">ASP.NET MVC 5</span>
+                <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">Entity Framework</span>
+                <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">SQL Server</span>
+                <span class="font-mono text-[9px] md:text-[10px] text-gh-sec bg-gh-canvas border border-gh-border rounded px-1.5 py-0.5 shadow-2xs">Azure</span>
+              </div>
+            </div>
+
+            <hr class="border-none border-t border-gh-borderM my-5">
+
+            <!-- Earlier Roles -->
+            <div class="mb-0">
+              <div class="mb-3">
+                <span class="text-xs md:text-sm font-semibold text-gh-sec">Earlier roles (2011 – 2016)</span>
+              </div>
+              <div class="space-y-3">
+                <div class="py-3 border-b border-gh-borderM last:border-none last:pb-0 first:pt-0">
+                  <div class="flex items-baseline gap-1">
+                    <span class="text-xs md:text-sm font-semibold text-gh-text">Janus Automation</span>
+                    <span class="text-xs text-gh-muted font-mono">· Software Engineer · 2016</span>
+                  </div>
+                  <p class="text-xs md:text-[13px] text-gh-sec mt-1 leading-relaxed">Production-reporting software in C# and ASP.NET MVC.</p>
+                </div>
+                <div class="py-3 border-b border-gh-borderM last:border-none last:pb-0 first:pt-0">
+                  <div class="flex items-baseline gap-1">
+                    <span class="text-xs md:text-sm font-semibold text-gh-text">BSD Enterprise</span>
+                    <span class="text-xs text-gh-muted font-mono">· Software Engineer · 2015–2016</span>
+                  </div>
+                  <p class="text-xs md:text-[13px] text-gh-sec mt-1 leading-relaxed">Web modules with ASP.NET MVC; led Java → .NET workflow system migration for OXXO.</p>
+                </div>
+                <div class="py-3 border-b border-gh-borderM last:border-none last:pb-0 first:pt-0">
+                  <div class="flex items-baseline gap-1">
+                    <span class="text-xs md:text-sm font-semibold text-gh-text">Univisit</span>
+                    <span class="text-xs text-gh-muted font-mono">· .NET Developer · 2012–2015</span>
+                  </div>
+                  <p class="text-xs md:text-[13px] text-gh-sec mt-1 leading-relaxed">Maintained legacy systems with C#, ASP.NET WebForms, Windows Forms, jQuery, and SQL Server.</p>
+                </div>
+                <div class="py-3 border-b border-gh-borderM last:border-none last:pb-0 first:pt-0">
+                  <div class="flex items-baseline gap-1">
+                    <span class="text-xs md:text-sm font-semibold text-gh-text">Gameloft</span>
+                    <span class="text-xs text-gh-muted font-mono">· Developer · 2011–2012</span>
+                  </div>
+                  <p class="text-xs md:text-[13px] text-gh-sec mt-1 leading-relaxed">Maintained and developed features for the WAPShop mobile game distribution site.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
